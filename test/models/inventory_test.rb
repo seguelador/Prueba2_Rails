@@ -13,4 +13,10 @@ class InventoryTest < ActiveSupport::TestCase
   	@inventory.serial = 1
   	assert @inventory.valid?
   end
+
+  test "Wheel cant be less than 0" do
+  	@inventory.wheel = 0
+  	assert_not @inventory.valid?
+  end
+
 end
