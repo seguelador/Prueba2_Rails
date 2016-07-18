@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serial: 1
+  wheel: 1
+  description: Descripcion1
+  category: one
+
+two:
+  serial: 2
+  wheel: 2
+  description: Descripcion2
+  category: two
