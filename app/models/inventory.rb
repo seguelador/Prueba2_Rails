@@ -1,6 +1,6 @@
 class Inventory < ActiveRecord::Base
   belongs_to :category
-  belongs_to :work
+  has_one :work
   validates :wheel, numericality: { greater_than: 0 }
   after_destroy :write_register
 

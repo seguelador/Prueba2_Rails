@@ -1,0 +1,19 @@
+<h1>Trabajos</h1>
+<table border="1">
+  <thead>
+    <th>Descripcion</th>
+    <th>Usuario</th>
+    <th>Item</th>
+    <th>CategoriaItem</th>
+  </thead>
+  <tbody>
+    <% @works.each do |w| %>
+    <tr>
+      <td><%= w.description %></td>
+      <td><%= w.user.name %></td>
+      <td><%= w.inventory.try(:serial) %></td>
+      <td><%= w.inventory.try(:category).try(:name) %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
